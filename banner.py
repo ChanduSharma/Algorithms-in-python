@@ -166,8 +166,13 @@ mylist = {'a':a,'b':b,'c':c,'d':d,'e':e,'f':f,'g':g,'h':h,
 
 #first argument of the command line
 #So it will not read space separated name in command line
-name = sys.argv[1]
-
+try:
+	name = sys.argv[1]
+except NameError:
+    print('Usage: banner.py [name] without brackets.')
+    sys.exit('No Input was given to the program.')
+else:
+    name = sys.argv[1]
 itr = 0 
 coloumn = 0
 while itr < 5:
