@@ -166,23 +166,22 @@ mylist = {'a':a,'b':b,'c':c,'d':d,'e':e,'f':f,'g':g,'h':h,
 
 #first argument of the command line
 #So it will not read space separated name in command line
-try:
-	name = sys.argv[1]
-except NameError:
-    print('Usage: banner.py [name] without brackets.')
-    sys.exit('No Input was given to the program.')
+if len(sys.argv) > 1:
+	name = sys.argv[1];
+	itr = 0 
+	coloumn = 0
+	while itr < 5:
+	#Iteration is taken as five because the display I used 
+	# is a 5 segment display tuple.
+		line = []
+	
+		for i in name.lower():
+			line.append(mylist[i][coloumn])
+	
+		coloumn += 1
+		print('  '.join(line))
+	
+		itr += 1
 else:
-    name = sys.argv[1]
-itr = 0 
-coloumn = 0
-while itr < 5:
-#Iteration is taken as five because the display I use is 5 segment display tuple.
-	line = []
-	
-	for i in name.lower():
-		line.append(mylist[i][coloumn])
-	
-	coloumn += 1
-	print('  '.join(line))
-	
-	itr += 1
+	print('Usage : banner.py [name]')
+	print('And Yeah!Ofcourse name without brackets.')
