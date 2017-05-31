@@ -1,4 +1,6 @@
 # My-Python-codes
-This folder mostly the codes I writing while learning and may contain several codes without exception handling.
-May be I'll add them later.Till now I have a program that I loved during my UNIX course.It simply just prints whatever you pass it in
-large size by using '#' characters on the console.I don't remember exactly but may be the original banner used the 7 segments instead of 5.Huh! but that would require only a bit of mutation in my code.
+This folder mostly contains the codes that I am writing while learning python and may contain several codes without exception handling.
+May be I'll add them later.
+The list is as follows..
+
+1. Banner.py -  It's a simple version of a command line tool in UNIX operating system known as 'Banner'.It outputs a large ASCII art version of the text that is supplied to it as its program arguments.However this program works for only english characters.
