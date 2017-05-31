@@ -183,6 +183,7 @@ if len(sys.argv) > 1:
 			print('  '.join(line))
 	
 			itr += 1
+		print('\n')
 else:
 	print('Usage : banner.py [name]')
 	print('And Yeah!Ofcourse name without brackets.')
