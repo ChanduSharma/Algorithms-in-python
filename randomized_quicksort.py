@@ -43,5 +43,5 @@ if __name__ == '__main__':
 	print("printing the dummy list before quicksort.")
 	print(*dummy_list)
 	randomized_quicksort(dummy_list,0,len(dummy_list)-1)
-	print('Dummy list after heapsort.')
+	print('Dummy list after quicksort.')
 	print(*dummy_list)
