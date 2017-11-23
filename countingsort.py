@@ -18,7 +18,7 @@ def counting_sort(A,k):
 	
 	
 	for i in range(1,k+1):
-		c[i] = c[i] + c[i-1]
+		c[i] += c[i-1]
 		
 		
 	result = [0] * len(A)
