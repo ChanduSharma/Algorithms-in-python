@@ -26,7 +26,7 @@ def heapsort(arr):
 	
 	#building max heap
 	
-	for i in range(n-1,-1,-1):
+	for i in range((n-1)//2,-1,-1):
 		max_heapify(arr,n,i)
 		
 	for i in range(n-1,0,-1):
